@@ -1,0 +1,236 @@
+body {
+  margin: 0%;
+  text-align: center;
+  min-height: 100vh;
+}
+
+nav {
+  background-color: black;
+  z-index: 1;
+  color: white;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  padding-left: 15px;
+  padding-right: 15px;
+  position: fixed;
+  width: 100%;
+  top: 0%;
+}
+
+.add-product-btn {
+  margin-right: 30px;
+  align-items: center;
+  justify-content: center;
+  font-size: 15px;
+  padding: 5px 13px;
+  cursor: pointer;
+  border-radius: 10px;
+}
+
+.logo-div {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+
+.logo-div button {
+  font-size: 30px;
+  background-color: black;
+  color: white;
+  border: 1px black solid;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  padding-top: 10px;
+}
+
+.logo-div h1 {
+  padding-left: 20px;
+}
+
+.side-bar {
+  width: 20%;
+  min-height: 100vh;
+  align-items: flex-start;
+  margin-top: 67px;
+}
+
+.side-bar ul li {
+  list-style-type: none;
+  text-align: left;
+  line-height: 2.5rem;
+  padding: 10px;
+}
+
+.side-bar ul li a{
+  text-decoration: none;
+  color: white;
+}
+
+.content-container {
+  margin-top: 100px;
+}
+
+.product-list {
+  width: 95%;
+  justify-self: center;
+}
+
+.product-list tr th {
+  border: 2px rgb(59, 59, 59) solid;
+  font-size: large;
+  background-color: rgba(66, 66, 66, 0.9);
+  color: white;
+  padding: 0px 5px;
+}
+
+.product-list tr td {
+  border: 2px rgb(59, 59, 59) solid;
+  font-size: large;
+  padding: 5px;
+  text-align: left;
+}
+
+.product-list tr td img{
+  height: 100px;
+  width: 200px;
+  align-content: center;
+  text-align: center;
+  font-weight: 400;
+}
+
+.action-btn-container {
+  display: flex;
+  flex-direction: row;
+}
+
+.action-btn-container button{
+  margin: 5px;
+  height: 30px;
+  width: 30px;
+  margin-top: 8px;
+  margin-bottom: 8px;
+  font-size: 15px;
+  border-radius: 5px;
+  cursor: pointer;
+  color: black;
+}
+
+.update-btn {
+  background-color: rgb(49, 218, 133);
+  border-color: rgb(49, 218, 133);
+}
+
+.delete-btn {
+  background-color: rgb(243, 56, 56);
+  border-color: rgb(243, 56, 56);
+}
+
+.product-form-container {
+  width: 45%;
+  justify-self: center;
+  padding: 10px;
+  border-radius: 10px;
+  box-shadow: 5px 5px 15px rgba(0, 0, 0);
+}
+
+.product-form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+}
+
+.product-form input {
+  width: 500px;
+  height: 20px;
+  padding: 8px;
+  margin: 8px 0px;
+  border-radius: 5px;
+}
+
+.product-form button {
+  width: 520px;
+  height: fit-content;
+  padding: 5px;
+  margin: 15px 8px;
+  cursor: pointer;
+  font-size: large;
+  font-weight: bold;
+  background-color: rgb(154, 160, 165);
+  border-color: rgb(140, 156, 170);
+  color: rgb(2, 2, 49);
+}
+
+.modal-backdrop {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+}
+
+.modal-content {
+  background: white;
+  padding: 1.5rem;
+  border-radius: 8px;
+  position: relative;
+}
+
+.close-btn {
+  position: absolute;
+  top: 10px;
+  right: 15px;
+  background: none;
+  font-size: 2rem;
+  border: none;
+  cursor: pointer;
+}
+
+.modal-content h2{
+  text-align: left;
+}
+
+.modal-form {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.modal-form input{
+  width: 400px;
+  height: 18px;
+  padding: 8px;
+  margin: 8px 0px;
+  border-radius: 5px;
+  border: 1px black solid;
+}
+
+.modal-footer {
+  display: flex;
+  justify-content: space-around;
+  align-self: flex-end;
+}
+
+.modal-footer button {
+  width: 100px;
+  padding: 5px;
+  height: fit-content;
+  cursor: pointer;
+  font-size: large;
+  font-weight: bold;
+  background-color: rgb(154, 160, 165);
+  border-color: rgb(140, 156, 170);
+  color: rgb(2, 2, 49);
+  border-radius: 5px;
+  margin-left: 10px;
+}

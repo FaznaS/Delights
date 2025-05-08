@@ -1,0 +1,126 @@
+.user-header-container {
+    z-index: 100;
+}
+
+.user-header-container div{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+.user-header-container ul {
+    display: flex;
+    flex-direction: row;
+    list-style-type: none;
+    text-align: center;
+    padding-right: 30px;
+}
+.user-header-container ul li {
+    margin-left: 10px;
+    margin-right: 10px;
+    font-size: 1.1rem;
+}
+footer {
+    background-color: black;
+    color: white;
+    text-align: center;
+    padding: 1px;
+}
+.hero-section {
+    position: relative;
+    display: flex;
+    align-items: center;
+    background-image: url('./assets/cafe.jpg');
+    background-size: cover; 
+    background-position: center;
+    background-repeat: no-repeat;
+    aspect-ratio: 24 / 9;
+    width: 100%;
+    max-height: 450px;
+    margin-top: 65px;
+}
+.hero-section::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.4);
+}
+.hero-section h1 {
+    color: white;
+    font-size: 5.5rem;
+    z-index: 2;
+    width: 100%;
+    text-align: center;
+}
+
+.about-content-container {
+    width: 90%;
+    display: flex;
+    flex-direction: row;
+    justify-self: center;
+}
+
+.about-img-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+    margin-right: 25px;
+}
+
+.about-img-container img{
+    max-width: 400px;
+    max-height: 270px;
+    margin: 15px;
+}
+
+.about-text-container {
+    width: 60%;
+    text-align: justify;
+    font-size: large;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.product-list-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-self: center;
+    width: 90%;
+}
+  
+.product-card-container {
+    width: fit-content;
+    height: fit-content;
+    width: 250px;
+    margin: 20px;
+    font-size: large;
+    text-align: start;
+    font-weight: 600;
+    line-height: 1.0em;
+    border-radius: 10px;
+    box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.3);
+    transition: all 0.3s;
+    cursor: pointer;
+    background-color: rgb(226, 226, 243);
+    border: 2px black solid;
+}
+  
+.product-card-container:hover {    
+    transform: translateY(-5px);
+}
+  
+.product-card-image-container,  .product-card-image-container img{
+    height: 150px;
+    width: 250px;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    align-content: center;
+    text-align: center;
+    font-weight: 400;
+}
+  
+.product-card-container p {
+    margin: 8px;
+}
