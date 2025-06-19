@@ -7,6 +7,7 @@
     flex-direction: row;
     align-items: center;
 }
+
 .user-header-container ul {
     display: flex;
     flex-direction: row;
@@ -14,17 +15,25 @@
     text-align: center;
     padding-right: 30px;
 }
+
 .user-header-container ul li {
     margin-left: 10px;
     margin-right: 10px;
     font-size: 1.1rem;
 }
+
+.user-header-container ul li a{
+    color: white;
+    text-decoration: none;
+}
+
 footer {
     background-color: black;
     color: white;
     text-align: center;
     padding: 1px;
 }
+
 .hero-section {
     position: relative;
     display: flex;
@@ -38,6 +47,7 @@ footer {
     max-height: 450px;
     margin-top: 65px;
 }
+
 .hero-section::before {
     content: "";
     position: absolute;
@@ -47,12 +57,17 @@ footer {
     height: 100%;
     background-color: rgba(0, 0, 0, 0.4);
 }
+
 .hero-section h1 {
     color: white;
     font-size: 5.5rem;
     z-index: 2;
     width: 100%;
     text-align: center;
+}
+
+.page-container {
+  margin-top: 100px;
 }
 
 .about-content-container {
