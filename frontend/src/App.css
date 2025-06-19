@@ -51,6 +51,10 @@ nav {
   padding-left: 20px;
 }
 
+.login-link, .signup-link {
+  cursor: pointer;
+}
+
 .side-bar {
   width: 20%;
   min-height: 100vh;
