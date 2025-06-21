@@ -75,6 +75,7 @@ footer {
     display: flex;
     flex-direction: row;
     justify-self: center;
+    padding-bottom: 50px;
 }
 
 .about-img-container {
@@ -106,14 +107,10 @@ footer {
 }
   
 .product-card-container {
-    width: fit-content;
-    height: fit-content;
     width: 250px;
+    height: 370px;
     margin: 20px;
-    font-size: large;
     text-align: start;
-    font-weight: 600;
-    line-height: 1.0em;
     border-radius: 10px;
     box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.3);
     transition: all 0.3s;
@@ -127,7 +124,7 @@ footer {
 }
   
 .product-card-image-container,  .product-card-image-container img{
-    height: 150px;
+    height: 160px;
     width: 250px;
     border-top-left-radius: 10px;
     border-top-right-radius: 10px;
@@ -136,6 +133,94 @@ footer {
     font-weight: 400;
 }
   
-.product-card-container p {
+.product-card-content-container {
     margin: 8px;
+}
+
+.login-form-container {
+    background-image: url('./assets/cafe1.jpg');
+    background-size: cover; 
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 100vh;
+    align-content: center;
+    justify-items: center;
+}
+
+.login-form-container::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background-color: rgba(138, 138, 138, 0.5);
+  z-index: 1;
+}
+
+.form-container {
+  position: relative;
+  width: 400px;
+  height: 470px;
+  padding: 10px;
+  border-radius: 10px;
+  background-color: rgb(243, 242, 242);
+  box-shadow: 5px 5px 15px rgba(0, 0, 0);
+  z-index: 2;
+}
+
+.login-form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+}
+
+.login-form input {
+  width: 300px;
+  height: 20px;
+  padding: 8px;
+  margin: 8px 0px;
+  border-radius: 5px;
+}
+
+.login-btn {
+  width: 320px;
+  height: fit-content;
+  padding: 5px;
+  margin: 15px 8px;
+  cursor: pointer;
+  font-size: large;
+  font-weight: bold;
+  background-color: rgb(154, 160, 165);
+  border-color: rgb(140, 156, 170);
+  color: rgb(2, 2, 49);
+}
+
+.or-divider {
+  display: flex;
+  align-items: center;
+  text-align: center;
+  margin-bottom: 15px;
+}
+
+.or-divider hr {
+  border-top: 1px solid #ccc;
+  width: 140px;
+}
+
+.or-divider span {
+  padding: 0 10px;
+  color: #555;
+  font-weight: 500;
+}
+
+.signIn-with-btn {
+  width: 320px;
+  height: 35px;
+  padding: 5px;
+  cursor: pointer;
+  font-size: large;
+  font-weight: bold;
+  background-color: rgb(25, 25, 97);
+  border-color: rgb(25, 25, 97);
+  color: rgb(232, 232, 250);
 }

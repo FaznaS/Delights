@@ -7,12 +7,13 @@ import Home from './pages/HomePage'
 import AboutUs from './pages/AboutUs'
 import ContactUs from './pages/ContactUs'
 import Menu from './pages/Menu'
+import Login from './components/Login'
+import SignUp from './components/SignUp'
 
 function App() {
 
   return (
     <div>
-      <AdminLayout />
       <Routes>
         <Route path='/' element={<Home/>} />
         <Route path='/view' element={<ProductList />} />
@@ -20,6 +21,8 @@ function App() {
         <Route path='/aboutUs' element={<AboutUs />} />
         <Route path='/contactUs' element={<ContactUs />} />
         <Route path='/menu' element={<Menu />} />
+        <Route path='/login' element={<Login />} />
+        <Route path='/signUp' element={<SignUp />} />
       </Routes>
     </div>
   )
