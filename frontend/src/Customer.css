@@ -1,3 +1,4 @@
+/*Styles for user navigation bar*/
 .user-header-container {
     z-index: 100;
 }
@@ -70,6 +71,7 @@ footer {
   margin-top: 100px;
 }
 
+/*About Section Styles*/
 .about-content-container {
     width: 90%;
     display: flex;
@@ -99,11 +101,13 @@ footer {
     font-family: Arial, Helvetica, sans-serif;
 }
 
+/* Top Sellers Style*/
 .product-list-container {
     display: flex;
     flex-wrap: wrap;
     justify-self: center;
     width: 90%;
+    height: fit-content;
 }
   
 .product-card-container {
@@ -135,6 +139,33 @@ footer {
   
 .product-card-content-container {
     margin: 8px;
+}
+
+/* New Styles for swiper btns */
+.swiper-button {
+  display: flex;
+  position: absolute;
+  top: 785px;
+  z-index: 10;
+  cursor: pointer;
+}
+
+.swiper-button svg {
+  width: 2.3rem;
+  height: 2.3rem;
+}
+
+.image-swiper-button-prev {
+  left: 45px;
+}
+
+.image-swiper-button-next {
+  right: 45px;
+}
+
+.swiper-button-disabled {
+  opacity: 0.5;
+  pointer-events: none;
 }
 
 .login-form-container {

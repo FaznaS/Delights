@@ -43,6 +43,7 @@ const ProductListItem = ({ product }) => {
         </td>
       </tr>
 
+      {/* Update Modal */}
       <Modal isOpen={showModal} onClose={() => setShowModal(false)}>
           <h2>Update Product</h2>
           <div className='modal-form'>
