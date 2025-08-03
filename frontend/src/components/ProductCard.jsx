@@ -1,16 +1,21 @@
 import React from 'react'
-import { Link } from 'react-router-dom'
+import { Link, useNavigate } from 'react-router-dom'
 
 const ProductCard = ({ product }) => {
+  const navigate = useNavigate();
+
+  const handleClick = () => {
+    navigate(`/product/${product._id}`, { state: {product} });
+  }
+
   return (
     <div>
-        <div className="product-card-container">
+        <div className="product-card-container" onClick={ handleClick }>
           {/* Left Side */}
-          <Link to={`/product/${product._id}`}>
           <div className="product-card-image-container">
             <img src={product.image} alt={product.name} />
           </div>
-          </Link>
+
           {/* Right Side */}
           <div className="product-card-content-container">
             <p style={{ fontWeight: 600, fontSize: 'large'}}>

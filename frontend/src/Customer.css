@@ -68,15 +68,25 @@ footer {
 }
 
 .page-container {
-  margin-top: 100px;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  padding-top: 70px; /* height of navbar */
+}
+
+.content {
+  flex: 1;
+  padding: 20px;
 }
 
 /*About Section Styles*/
 .about-content-container {
     width: 90%;
+    max-width: 1280px;
     display: flex;
     flex-direction: row;
     justify-self: center;
+    justify-content: center;
     padding-bottom: 50px;
 }
 
@@ -254,4 +264,27 @@ footer {
   background-color: rgb(25, 25, 97);
   border-color: rgb(25, 25, 97);
   color: rgb(232, 232, 250);
+}
+
+.cart-icon {
+  position: fixed;
+  font-size: xx-large;
+  bottom: 90px;
+  right: 20px;
+  background-color: #8a8989;
+  padding: 15px;
+  border-radius: 15px;
+}
+
+/*Styles for view  product*/
+.view-product-card {
+  margin-top: 100px;
+  display: flex;
+  justify-self: center;
+  background-color: rgba(192, 192, 192, 1);
+  align-items: center;
+  padding: 20px;
+  border-radius: 20px;
+  width: 70%;
+  max-width: 900px;
 }

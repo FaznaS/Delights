@@ -4,10 +4,10 @@ import Footer from '../components/Footer';
 
 const AboutUs = () => {
   return (
-    <div>
+    <div className='page-container'>
       <Header />
 
-      <div className='page-container'>
+      <div className='content'>
         <h1 className="heading-home">About Us</h1>
       
         <div className='about-content-container'>
@@ -42,8 +42,9 @@ const AboutUs = () => {
                 </p>
             </div>
         </div>
-        <Footer />
       </div>
+
+      <Footer />
       
     </div>
   )
