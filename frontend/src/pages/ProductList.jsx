@@ -3,6 +3,7 @@ import { Link } from 'react-router-dom'
 import { useProductStore } from '../store/product'
 import Modal from '../components/Modal';
 import ProductListItem from '../components/ProductListItem';
+import AdminLayout from '../pages/AdminLayout';
 
 const ProductList = () => {
     const {fetchProducts, products} = useProductStore();
@@ -14,6 +15,8 @@ const ProductList = () => {
     console.log(products);
     
     return (
+      <>
+        <AdminLayout />
         <div className='content-container'>
           <h1>Current Products</h1>
 
@@ -41,6 +44,7 @@ const ProductList = () => {
   
           <Modal/>
         </div>
+      </>
     )
 }
 

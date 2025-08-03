@@ -5,6 +5,7 @@ import { useProductStore } from '../store/product'
 import { FaCartShopping } from "react-icons/fa6";
 import { BiSolidFoodMenu } from "react-icons/bi";
 import Header from '../components/AdminHeader';
+import AdminHeader from '../components/AdminHeader';
 
 const AdminDashboard = () => {
   const [isSideBarOpen, setIsSideBarOpen] = useState(false);
@@ -23,6 +24,8 @@ const AdminDashboard = () => {
   
   return (
     <div>
+      <AdminHeader />
+      
       <Header toggleSidebar={toggleSidebar} isSideBarOpen={isSideBarOpen} />
 
       {isSideBarOpen && (
