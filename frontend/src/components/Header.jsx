@@ -1,9 +1,11 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
+import Cart from './Cart'
 
 const Header = () => {
   return (
     <div>
+        {/* Navigation Bar */}
         <nav className='user-header-container'>
             <div>
                 <h1>Delights</h1>
@@ -19,6 +21,9 @@ const Header = () => {
                 <li className='signup-link'><Link to="/signUp">Sign Up</Link></li>
             </ul>
         </nav>
+
+        {/* Shopping Cart */}
+        <Cart />
     </div>
   )
 }
