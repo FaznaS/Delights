@@ -26,6 +26,7 @@ const ProductList = () => {
               <th>Product Name</th>
               <th>Product Description</th>
               <th>Product Price</th>
+              <th>Product Quantity</th>
               <th>Actions</th>
             </tr>
             {products.map((product) => (

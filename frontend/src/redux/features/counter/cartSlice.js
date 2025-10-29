@@ -13,8 +13,13 @@ export const cartSlice = createSlice({
       if (!existingItem) {
         state.cartItems.push(action.payload);
         alert("Item added to cart successfully");
-      } else {  
-        alert("Item already in cart");
+      } else {
+        if(existingItem.quantity < existingItem.quantityAvailable) {
+          existingItem.quantity += action.payload.quantity;
+          alert("Increased item quantity in cart");
+        } else {
+          alert("Sorry, no more items available in stock");
+        }
       }
     },
     removeFromCart: (state, action) => {

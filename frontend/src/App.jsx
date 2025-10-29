@@ -11,6 +11,7 @@ import Login from './components/Login'
 import SignUp from './components/SignUp'
 import ViewProduct from './pages/ViewProduct'
 import CartPage from './pages/CartPage'
+import Checkout from './components/Checkout'
 
 function App() {
 
@@ -27,6 +28,7 @@ function App() {
         <Route path='/signUp' element={<SignUp />} />
         <Route path='/product/:prodID' element={<ViewProduct />} />
         <Route path='/cart' element={<CartPage />} />
+        <Route path='/checkout' element={<Checkout />} />
       </Routes>
     </div>
   )

@@ -14,7 +14,7 @@ const ProductCard = ({ product }) => {
   const dispatch = useDispatch();
 
   const handleAddToCart = (product) => {
-    dispatch(addToCart(product));
+    dispatch(addToCart({ ...product, quantity: 1}));
   }
 
   return (

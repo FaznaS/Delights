@@ -31,6 +31,7 @@ const ProductListItem = ({ product }) => {
         <td>{product.name}</td>
         <td>{product.description}</td>
         <td>Rs. {product.price}</td>
+        <td>{product.quantityAvailable}</td>
         <td>
           <div className='action-btn-container'>
             <button className="update-btn" onClick={() => setShowModal(true)}>
@@ -64,6 +65,12 @@ const ProductListItem = ({ product }) => {
               name='price'
               value={updatedProduct.price}
               onChange={(e) => setUpdateProduct({...updatedProduct, price: e.target.value})}
+            />
+            <input
+              placeholder='Quantity Available'
+              name='quantityAvailable'
+              value={updatedProduct.quantity}
+              onChange={(e) => setUpdateProduct({...updatedProduct, quantityAvailable: e.target.value})}
             />
             <input
               placeholder='Image URL'

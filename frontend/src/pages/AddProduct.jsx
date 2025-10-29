@@ -6,6 +6,7 @@ const AddProduct = () => {
         name: "",
         description: "",
         price: "",
+        quantityAvailable: "",
         image: "",
     });
 
@@ -41,6 +42,13 @@ const AddProduct = () => {
                     name='price'
                     value={newProduct.price}
                     onChange={(e) => setNewProduct({...newProduct, price: e.target.value})}
+                />
+
+                <input
+                    placeholder='Quantity Available'
+                    name='quantityAvailable'
+                    value={newProduct.quantity}
+                    onChange={(e) => setNewProduct({...newProduct, quantityAvailable: e.target.value})}
                 />
 
                 <input
